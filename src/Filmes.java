@@ -1,9 +1,9 @@
 public class Filmes {
     String nome;
-    String anoDeLancamento;
     String sinopse;
     boolean incluidoNoPlano;
+    int anoDeLancamento;
     double avaliacao;
-    int totalDeAvaliacoes;
-    int duracaoEmMinutos;
+    double totalDeAvaliacoes;
+    double duracaoEmMinutos;
 }
