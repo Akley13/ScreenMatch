@@ -9,7 +9,6 @@ public class Principal {
         filmePreferido.totalDeAvaliacoes = 10.00;
         filmePreferido.incluidoNoPlano = true;
 
-        System.out.println(filmePreferido.nome);
-        System.out.println(filmePreferido.anoDeLancamento);
+        filmePreferido.exibeFichaTecnica();
     }
 }
