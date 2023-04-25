@@ -19,5 +19,6 @@ public class Filmes { // Classe
 
     void avalia(double nota) {
         somaDasAvaliacoes += nota;
+        totalDeAvaliacoes++;
     }
 }
