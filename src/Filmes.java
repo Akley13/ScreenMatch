@@ -1,5 +1,5 @@
 public class Filmes { // Classe
-    String nome;
+    String nome; // Atributos - Características do objeto
     String sinopse;
     double duracaoEmMinutos;
     int anoDeLancamento;
@@ -12,13 +12,15 @@ public class Filmes { // Classe
         System.out.println("Sinopse: " + sinopse);
         System.out.println("Duração (Minutos): " + duracaoEmMinutos);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
-        System.out.println("Avaliação: " + somaDasAvaliacoes);
-        System.out.println("Total de avaliações: " + totalDeAvaliacoes);
         System.out.println("Plano: " + incluidoNoPlano);
     }
 
     void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
+    }
+
+    double pegaMedia(){
+        return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }

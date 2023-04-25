@@ -13,5 +13,6 @@ public class Principal {
         filmePreferido.avalia(10);
         System.out.println(filmePreferido.somaDasAvaliacoes);
         System.out.println(filmePreferido.totalDeAvaliacoes);
+        System.out.println(filmePreferido.pegaMedia());
     }
 }
