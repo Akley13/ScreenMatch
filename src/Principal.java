@@ -16,7 +16,8 @@ public class Principal {
         System.out.println(filmePreferido.totalDeAvaliacoes);
         System.out.println(filmePreferido.pegaMedia());
 
-        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("\n---------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println();
 
         Filmes animes = new Filmes();
         animes.nome = "Naruto Shippuden";
@@ -32,6 +33,6 @@ public class Principal {
         animes.avalia(8.0);
         System.out.println(animes.somaDasAvaliacoes);
         System.out.println(animes.totalDeAvaliacoes);
-        System.out.printf(animes.pegaMedia("%d.2f"));
+        System.out.println(animes.pegaMedia());
     }
 }
