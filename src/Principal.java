@@ -14,5 +14,13 @@ public class Principal {
         System.out.println(filmePreferido.somaDasAvaliacoes);
         System.out.println(filmePreferido.totalDeAvaliacoes);
         System.out.println(filmePreferido.pegaMedia());
+
+        Filmes animes = new Filmes();
+        animes.nome = "Naruto Shippuden é a segunda parte do anime Naruto, que adapta a continuação do mangá original escrito por Masashi Kishimoto e consiste em 500 episódios ao todo. Ambientada dois anos após os eventos da série original, Shippuden acompanha o ninja adolescente Naruto e seus aliados.";
+        animes.anoDeLancamento = 2007;
+        animes.sinopse = "";
+        animes.duracaoEmMinutos = ;
+        animes.incluidoNoPlano = true;
+
     }
 }
