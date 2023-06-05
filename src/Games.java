@@ -24,4 +24,6 @@ public class Games {
         System.out.println("Total de avaliações: " + totalAvaliacoes);
         System.out.println("Assinatura: " + assinatura);
     }
+
+    Void
 }
