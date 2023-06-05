@@ -21,13 +21,18 @@ public class Games {
         System.out.println("História: " + historia);
         System.out.println("Duração (Horas): " + duracaoEmHoras);
         System.out.println("Avaliação: " + somaAvaliacoes);
-        System.out.println("Total de avaliações: " + totalAvaliacoes);
+        System.out.printf("Média das avaliações: %.2f", fazMediaDasAvaliacoes());
+        System.out.println("\nTotal de avaliações: " + totalAvaliacoes);
         System.out.println("Assinatura: " + assinatura);
     }
 
     void avaliacaoDasPessoas(double nota){
         somaAvaliacoes += nota; // somaAvaliacoes = avaliacao + nota
-        somaAvaliacoes = somaAvaliacoes / totalAvaliacoes;
         totalAvaliacoes++;
     }
+
+    double fazMediaDasAvaliacoes(){
+        return somaAvaliacoes / totalAvaliacoes;
+    }
+
 }
