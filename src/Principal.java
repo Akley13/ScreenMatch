@@ -7,8 +7,9 @@ public class Principal {
         jogoPreferido.anoDeLancamento = 2013;
         jogoPreferido.historia = "The Last of Us é uma franquia de jogos eletrônicos de ação-aventura e survival horror exclusiva da PlayStation, criada por Neil Druckmann. A franquia é situada em um mundo pós-apocalíptico, com seres humanos hostis e criaturas canibais infectadas por uma mutação do fungo cordyceps.";
         jogoPreferido.duracaoEmHoras = 15;
-        jogoPreferido.avaliacao = 10;
-        jogoPreferido.totalAvaliacoes = 10;
+        jogoPreferido.avaliacaoDasPessoas(10);
+        jogoPreferido.avaliacaoDasPessoas(8.5);
+        jogoPreferido.avaliacaoDasPessoas(9);
         jogoPreferido.assinatura = true;
 
         jogoPreferido.exibeFichaTecnica();

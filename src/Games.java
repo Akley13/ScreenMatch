@@ -9,7 +9,7 @@ public class Games {
     int anoDeLancamento;
     String historia;
     int duracaoEmHoras;
-    double avaliacao;
+    double somaAvaliacoes;
     double totalAvaliacoes;
     boolean assinatura;
 
@@ -20,8 +20,14 @@ public class Games {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("História: " + historia);
         System.out.println("Duração (Horas): " + duracaoEmHoras);
-        System.out.println("Avaliação: " + avaliacao);
+        System.out.println("Avaliação: " + somaAvaliacoes);
         System.out.println("Total de avaliações: " + totalAvaliacoes);
         System.out.println("Assinatura: " + assinatura);
+    }
+
+    void avaliacaoDasPessoas(double nota){
+        somaAvaliacoes += nota; // somaAvaliacoes = avaliacao + nota
+        somaAvaliacoes = somaAvaliacoes / totalAvaliacoes;
+        totalAvaliacoes++;
     }
 }
