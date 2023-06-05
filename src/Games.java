@@ -14,7 +14,7 @@ public class Games {
     boolean assinatura;
 
     // MÉTODO
-    void exibeFichaTecnica(){
+    void exibeFichaTecnica() {
         System.out.println("\nNome do jogo: " + nome);
         System.out.println("Produtora: " + produtora);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
@@ -24,6 +24,4 @@ public class Games {
         System.out.println("Total de avaliações: " + totalAvaliacoes);
         System.out.println("Assinatura: " + assinatura);
     }
-
-    Void
 }
