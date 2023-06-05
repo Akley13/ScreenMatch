@@ -10,5 +10,7 @@ public class Principal {
         jogoPreferido.avaliacao = 10;
         jogoPreferido.totalAvaliacoes = 10;
         jogoPreferido.assinatura = true;
+
+        jogoPreferido.exibeFichaTecnica();
     }
 }
