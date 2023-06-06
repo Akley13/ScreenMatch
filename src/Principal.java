@@ -1,3 +1,5 @@
+import br.com.akley.screenmatch.modelos.Games;
+
 public class Principal {
     public static void main(String[] args) {
         Games jogoPreferido = new Games(); // linha 3: parte esquerda está guardando onde o objeto está e a parte da direita está criando o objeto.
@@ -13,5 +15,6 @@ public class Principal {
         jogoPreferido.assinatura = true;
 
         jogoPreferido.exibeFichaTecnica();
+
     }
 }

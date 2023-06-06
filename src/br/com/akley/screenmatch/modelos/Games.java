@@ -1,20 +1,20 @@
-// Classe Games, tudo que a classe tem, suas caracteristicas e o que ela faz.
+package br.com.akley.screenmatch.modelos;
 
-// CLASSE
+// CLASSE - tudo que a classe tem, suas caracteristicas e o que ela faz.
 public class Games {
 
     // ATRIBUTOS - Valores que podem ser guardados dentro de cada objeto.
-    String nome;
-    String produtora;
-    int anoDeLancamento;
-    String historia;
-    int duracaoEmHoras;
+    private String nome;
+    private String produtora;
+    private int anoDeLancamento;
+    private String historia;
+    private int duracaoEmHoras;
      private double somaAvaliacoes; // private - Modificar de acesso
     private int totalAvaliacoes; // private - Ou de visibilidade
-    boolean assinatura;
+    private boolean assinatura;
 
     // MÉTODO
-    void exibeFichaTecnica() {
+    private void exibeFichaTecnica() {
         System.out.println("\nNome do jogo: " + nome);
         System.out.println("Produtora: " + produtora);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
@@ -25,16 +25,16 @@ public class Games {
         System.out.println("Assinatura: " + assinatura);
     }
 
-    void avaliacaoDasPessoas(double nota){
+    private void avaliacaoDasPessoas(double nota){
         somaAvaliacoes += nota; // somaAvaliacoes = avaliacao + nota
         totalAvaliacoes++;
     }
 
-    double fazMediaDasAvaliacoes(){
+    private double fazMediaDasAvaliacoes(){
         return somaAvaliacoes / totalAvaliacoes;
     }
 
-    int getTotalAvaliacoes(){ // get - pegar valor
+    private int getTotalAvaliacoes(){ // get - pegar valor
         return totalAvaliacoes;
     }
 
