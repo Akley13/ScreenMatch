@@ -39,6 +39,8 @@ public class Games {
         this.assinatura = assinatura;
     }
 
+    
+
 
     // GETTERS - PEGA VALORES
     public String getNome() {
