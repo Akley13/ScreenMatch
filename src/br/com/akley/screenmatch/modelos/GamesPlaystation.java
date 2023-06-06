@@ -21,7 +21,11 @@ public class GamesPlaystation extends Consoles{
     }
 
     public void exibeDadosPlaystation(){
-        System.out.println("Resolução: " + reproducaoFullHD);
+        System.out.println("\n------- DADOS ESPECÍFICOS | PLAYSTATION -------");
+        System.out.println("\nResolução: " + reproducaoFullHD);
+        System.out.println("Playstation Plus: " + playstationPlus);
+        System.out.println("------------------------------------------");
+
     }
 
 }
