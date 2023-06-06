@@ -1,7 +1,6 @@
 package br.com.akley.screenmatch.modelos;
 
-// CLASSE - tudo que a classe tem, suas caracteristicas e o que ela faz.
-public class Games {
+public class Consoles {
 
     // ATRIBUTOS - Valores que podem ser guardados dentro de cada objeto.
     private String nome;
@@ -9,9 +8,8 @@ public class Games {
     private int anoDeLancamento;
     private String historia;
     private int duracaoEmHoras;
-     private double somaAvaliacoes; // private - Modificar de acesso
+    private double somaAvaliacoes; // private - Modificar de acesso
     private int totalAvaliacoes; // private - Ou de visibilidade
-    private boolean assinatura;
 
 
     // SETTERS - INSERI VALORES
@@ -34,13 +32,6 @@ public class Games {
     public void setDuracaoEmHoras(int duracaoEmHoras) {
         this.duracaoEmHoras = duracaoEmHoras;
     }
-
-    public void setAssinatura(boolean assinatura) {
-        this.assinatura = assinatura;
-    }
-
-    
-
 
     // GETTERS - PEGA VALORES
     public String getNome() {
@@ -72,7 +63,7 @@ public class Games {
     }
 
     // MÉTODO
-    private void exibeFichaTecnica() {
+    public void exibeFichaTecnica() {
         System.out.println("\nNome do jogo: " + nome);
         System.out.println("Produtora: " + produtora);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
@@ -83,7 +74,7 @@ public class Games {
         System.out.println("Assinatura: " + assinatura);
     }
 
-    private void avaliacaoDasPessoas(double nota){
+    public void avaliacaoDasPessoas(double nota){
         somaAvaliacoes += nota; // somaAvaliacoes = avaliacao + nota
         totalAvaliacoes++;
     }
