@@ -13,6 +13,62 @@ public class Games {
     private int totalAvaliacoes; // private - Ou de visibilidade
     private boolean assinatura;
 
+
+    // SETTERS - INSERI VALORES
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setProdutora(String produtora) {
+        this.produtora = produtora;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public void setHistoria(String historia) {
+        this.historia = historia;
+    }
+
+    public void setDuracaoEmHoras(int duracaoEmHoras) {
+        this.duracaoEmHoras = duracaoEmHoras;
+    }
+
+    public void setAssinatura(boolean assinatura) {
+        this.assinatura = assinatura;
+    }
+
+
+    // GETTERS - PEGA VALORES
+    public String getNome() {
+        return nome;
+    }
+
+    public String getProdutora() {
+        return produtora;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public String getHistoria() {
+        return historia;
+    }
+
+    public int getDuracaoEmHoras() {
+        return duracaoEmHoras;
+    }
+
+    public boolean isAssinatura() {
+        return assinatura;
+    }
+
+    private int getTotalAvaliacoes(){
+        return totalAvaliacoes;
+    }
+
     // MÉTODO
     private void exibeFichaTecnica() {
         System.out.println("\nNome do jogo: " + nome);
@@ -33,9 +89,4 @@ public class Games {
     private double fazMediaDasAvaliacoes(){
         return somaAvaliacoes / totalAvaliacoes;
     }
-
-    private int getTotalAvaliacoes(){ // get - pegar valor
-        return totalAvaliacoes;
-    }
-
 }
