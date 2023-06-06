@@ -10,7 +10,7 @@ public class Games {
     String historia;
     int duracaoEmHoras;
      private double somaAvaliacoes; // private - Modificar de acesso
-    private double totalAvaliacoes; // private - Ou de visibilidade
+    private int totalAvaliacoes; // private - Ou de visibilidade
     boolean assinatura;
 
     // MÉTODO
@@ -20,9 +20,8 @@ public class Games {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("História: " + historia);
         System.out.println("Duração (Horas): " + duracaoEmHoras);
-        System.out.println("Avaliação: " + somaAvaliacoes);
         System.out.printf("Média das avaliações: %.2f", fazMediaDasAvaliacoes());
-        System.out.println("\nTotal de avaliações: " + totalAvaliacoes);
+        System.out.println("\nTotal de avaliações: " + getTotalAvaliacoes());
         System.out.println("Assinatura: " + assinatura);
     }
 
@@ -33,6 +32,10 @@ public class Games {
 
     double fazMediaDasAvaliacoes(){
         return somaAvaliacoes / totalAvaliacoes;
+    }
+
+    int getTotalAvaliacoes(){ // get - pegar valor
+        return totalAvaliacoes;
     }
 
 }
