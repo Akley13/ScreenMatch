@@ -24,9 +24,9 @@ public class GamesXbox extends Consoles { // Extends - Palavra reservada do Java
     }
 
     public void exibeDadosXbox(){
-        System.out.println("\n------- DADOS ESPECÍFICOS | XBOX -------");
-        System.out.println("Resolução: " + reproducao4k);
+        System.out.println("\n--------- DADOS ESPECÍFICOS | XBOX ---------");
+        System.out.println("\nResolução: " + reproducao4k);
         System.out.println("Xbox Live Gold: " + xboxLiveGold);
-        System.out.println("------------------------------------------");
+        System.out.println("\n--------------------------------------------");
     }
 }
