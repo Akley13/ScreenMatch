@@ -54,10 +54,6 @@ public class Consoles {
         return duracaoEmHoras;
     }
 
-    public boolean isAssinatura() {
-        return assinatura;
-    }
-
     private int getTotalAvaliacoes(){
         return totalAvaliacoes;
     }
@@ -71,7 +67,6 @@ public class Consoles {
         System.out.println("Duração (Horas): " + duracaoEmHoras);
         System.out.printf("Média das avaliações: %.2f", fazMediaDasAvaliacoes());
         System.out.println("\nTotal de avaliações: " + getTotalAvaliacoes());
-        System.out.println("Assinatura: " + assinatura);
     }
 
     public void avaliacaoDasPessoas(double nota){
