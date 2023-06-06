@@ -3,14 +3,14 @@
 // CLASSE
 public class Games {
 
-    // ATRIBUTOS
+    // ATRIBUTOS - Valores que podem ser guardados dentro de cada objeto.
     String nome;
     String produtora;
     int anoDeLancamento;
     String historia;
     int duracaoEmHoras;
-    double somaAvaliacoes;
-    double totalAvaliacoes;
+     private double somaAvaliacoes; // private - Modificar de acesso
+    private double totalAvaliacoes; // private - Ou de visibilidade
     boolean assinatura;
 
     // MÉTODO
