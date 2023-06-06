@@ -14,7 +14,10 @@ public class Principal {
         TheLastOfUs.avaliacaoDasPessoas(8.5);
         TheLastOfUs.avaliacaoDasPessoas(9);
 
+        TheLastOfUs.setReproducaoFullHD("Full HD");
+
         TheLastOfUs.exibeFichaTecnica();
+        TheLastOfUs.exibeDadosPlaystation();
 
     }
 }

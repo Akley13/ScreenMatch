@@ -19,4 +19,9 @@ public class GamesPlaystation extends Consoles{
     public void setReproducaoFullHD(String reproducaoFullHD) {
         this.reproducaoFullHD = reproducaoFullHD;
     }
+
+    public void exibeDadosPlaystation(){
+        System.out.println("Resolução: " + reproducaoFullHD);
+    }
+
 }
