@@ -6,21 +6,13 @@ public class GamesXbox extends Consoles { // Extends - Palavra reservada do Java
     private String xboxLiveGold;
     private String reproducao4k;
 
-    public String getXboxLiveGold() {
-        return xboxLiveGold;
-    }
+    public String getXboxLiveGold() {return xboxLiveGold;}
 
-    public void setXboxLiveGold(String xboxLiveGold) {
-        this.xboxLiveGold = xboxLiveGold;
-    }
+    public void setXboxLiveGold(String xboxLiveGold) {this.xboxLiveGold = xboxLiveGold;}
 
-    public String getReproducao4k() {
-        return reproducao4k;
-    }
+    public String getReproducao4k() {return reproducao4k;}
 
-    public void setReproducao4k(String reproducao4k) {
-        this.reproducao4k = reproducao4k;
-    }
+    public void setReproducao4k(String reproducao4k) {this.reproducao4k = reproducao4k;}
 
     public void exibeDadosXbox(){
         System.out.println("\n--------- DADOS ESPECÍFICOS | XBOX ---------");
