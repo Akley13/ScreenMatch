@@ -12,7 +12,7 @@ public class Consoles {
     private int totalAvaliacoes; // private - Ou de visibilidade
 
 
-    // SETTERS - INSERI VALORES
+    // SETTERS - INSERE VALORES
     public void setNome(String nome) {
         this.nome = nome;
     }
