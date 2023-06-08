@@ -59,7 +59,13 @@ public class Consoles {
     }
 
     // MÉTODO
-    public void exibeFichaTecnica() {
+
+    public void exibeFichaTecnicaPlay5(){
+        System.out.println("\nNome do Console: " + nome);
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        System.out.println("História: " + historia);
+    }
+    public void exibeFichaTecnicaJogos() {
         System.out.println("\nNome do jogo: " + nome);
         System.out.println("Produtora: " + produtora);
         System.out.println("Ano de lançamento: " + anoDeLancamento);

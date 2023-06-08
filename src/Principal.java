@@ -6,7 +6,12 @@ public class Principal {
     public static void main(String[] args) {
 
         // História
-        Consoles playstation = new Consoles();
+        Consoles playstation5 = new Consoles();
+        playstation5.setNome("Playstation 5");
+        playstation5.setAnoDeLancamento(2020);
+        playstation5.setHistoria("O console foi lançado em 12 de novembro de 2020 na América do Norte, Austrália, Coreia do Sul, Japão, Nova Zelândia e Singapura. E em 11 de dezembro de 2020 foi lançado nas Filipinas. 19 de novembro para o resto do mundo.");
+        playstation5.exibeFichaTecnicaPlay5();
+
 
         // GamesPlaystation
         GamesPlaystation theLastOfUs = new GamesPlaystation(); // nesta linha parte esquerda do código está guardando onde o objeto está e a parte da direita está criando o objeto.
@@ -22,7 +27,7 @@ public class Principal {
         theLastOfUs.setReproducaoFullHD("Full HD");
         theLastOfUs.setPlaystationPlus("Ativo");
 
-        theLastOfUs.exibeFichaTecnica();
+        theLastOfUs.exibeFichaTecnicaJogos();
         theLastOfUs.exibeDadosPlaystation();
 
         //GamesXbox
@@ -39,7 +44,7 @@ public class Principal {
         gearsOfWar.setReproducao4k("4K");
         gearsOfWar.setXboxLiveGold("Ativo");
 
-        gearsOfWar.exibeFichaTecnica();
+        gearsOfWar.exibeFichaTecnicaJogos();
         gearsOfWar.exibeDadosXbox();
 
     }
