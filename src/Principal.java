@@ -1,8 +1,12 @@
+import br.com.akley.screenmatch.modelos.Consoles;
 import br.com.akley.screenmatch.modelos.GamesPlaystation;
 import br.com.akley.screenmatch.modelos.GamesXbox;
 
 public class Principal {
     public static void main(String[] args) {
+
+        // História
+        Consoles playstation = new Consoles();
 
         // GamesPlaystation
         GamesPlaystation theLastOfUs = new GamesPlaystation(); // nesta linha parte esquerda do código está guardando onde o objeto está e a parte da direita está criando o objeto.
