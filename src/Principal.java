@@ -2,15 +2,27 @@ import br.com.akley.screenmatch.modelos.Consoles;
 import br.com.akley.screenmatch.modelos.GamesPlaystation;
 import br.com.akley.screenmatch.modelos.GamesXbox;
 
+import java.util.Scanner;
+
 public class Principal {
     public static void main(String[] args) {
+        Scanner insereDadosDoUsuario = new Scanner(System.in);
 
-        // História
+        System.out.println("Qual seu console e jogo favorito?");
+        String resposta = insereDadosDoUsuario.nextLine();
+        
+        // História dos Consoles
         Consoles playstation5 = new Consoles();
         playstation5.setNome("Playstation 5");
         playstation5.setAnoDeLancamento(2020);
         playstation5.setHistoria("O console foi lançado em 12 de novembro de 2020 na América do Norte, Austrália, Coreia do Sul, Japão, Nova Zelândia e Singapura. E em 11 de dezembro de 2020 foi lançado nas Filipinas. 19 de novembro para o resto do mundo.");
-        playstation5.exibeFichaTecnicaPlay5();
+        playstation5.exibeFichaTecnicaConsoles();
+
+        Consoles xboxSeriesX = new Consoles();
+        xboxSeriesX.setNome("Xbox Series X");
+        xboxSeriesX.setAnoDeLancamento(2020);
+        xboxSeriesX.setHistoria("O Xbox Series X e Series S (coletivamente chamados de Xbox Series X/S) são consoles domésticos de jogos eletrônicos desenvolvidos pela Microsoft. É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett. Ambos os consoles foram lançados em 10 de novembro de 2020.");
+        xboxSeriesX.exibeFichaTecnicaConsoles();
 
 
         // GamesPlaystation

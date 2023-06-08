@@ -60,7 +60,7 @@ public class Consoles {
 
     // MÉTODO
 
-    public void exibeFichaTecnicaPlay5(){
+    public void exibeFichaTecnicaConsoles(){
         System.out.println("\nNome do Console: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("História: " + historia);
