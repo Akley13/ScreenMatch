@@ -1,4 +1,4 @@
-package br.com.akley.screenmatch.modelos;
+package br.com.akley.screenmatch.sections;
 
 
 // CLASSE - tudo que a classe tem, suas caracteristicas e o que ela faz.

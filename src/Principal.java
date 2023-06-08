@@ -1,8 +1,6 @@
-import br.com.akley.screenmatch.modelos.Consoles;
-import br.com.akley.screenmatch.modelos.GamesPlaystation;
-import br.com.akley.screenmatch.modelos.GamesXbox;
-
-import java.util.Scanner;
+import br.com.akley.screenmatch.sections.Consoles;
+import br.com.akley.screenmatch.sections.GamesPlaystation;
+import br.com.akley.screenmatch.sections.GamesXbox;
 
 public class Principal {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.com.akley.screenmatch.modelos;
+package br.com.akley.screenmatch.sections;
 
 public class GamesPlaystation extends Consoles{
     private String playstationPlus;
