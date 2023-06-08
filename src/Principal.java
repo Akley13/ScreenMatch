@@ -6,11 +6,7 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        Scanner insereDadosDoUsuario = new Scanner(System.in);
 
-        System.out.println("Qual seu console e jogo favorito?");
-        String resposta = insereDadosDoUsuario.nextLine();
-        
         // História dos Consoles
         Consoles playstation5 = new Consoles();
         playstation5.setNome("Playstation 5");
