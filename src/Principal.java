@@ -43,15 +43,15 @@ public class Principal {
         gearsOfWar.setProdutora("Epic Games");
         gearsOfWar.setAnoDeLancamento(2006);
         gearsOfWar.setHistoria("O jogo centra no Esquadrão Delta, um grupo de soldados da COG (Coalition of Ordered Governments) que recebe a missão de salvar o planeta Sera do exército Locust. O jogador controla Marcus Fenix, um ex-prisioneiro, e um possível segundo jogador controla \"Dom\" Santiago.");
-        gearsOfWar.setDuracaoEmHoras(20);
         gearsOfWar.avaliacaoDasPessoas(8);
         gearsOfWar.avaliacaoDasPessoas(10);
         gearsOfWar.avaliacaoDasPessoas(7);
         gearsOfWar.setReproducao4k("4K");
         gearsOfWar.setXboxLiveGold("Ativo");
 
+        System.out.println(gearsOfWar.getDuracaoEmHoras());
+
         gearsOfWar.exibeFichaTecnicaJogos();
         gearsOfWar.exibeDadosXbox();
-
     }
 }

@@ -1,6 +1,6 @@
 package br.com.akley.screenmatch.sections;
 
-public class GamesPlaystation extends Consoles{
+public class GamesPlaystation extends Consoles{ // Extends - Tem e faz tudo que Consoles(super tipo) tem, e mais estas diferenças a baixo.
     private String playstationPlus;
     private String reproducaoFullHD;
 
