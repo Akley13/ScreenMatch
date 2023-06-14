@@ -21,5 +21,5 @@ public class GamesXbox extends Consoles { // Extends - Palavra reservada do Java
         System.out.println("\n--------------------------------------------");
     }
 
-    
+
 }
