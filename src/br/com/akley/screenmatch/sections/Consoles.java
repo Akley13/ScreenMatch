@@ -61,16 +61,16 @@ public class Consoles {
     // MÉTODO
 
     public void exibeFichaTecnicaConsoles(){
-        System.out.println("\nNome do Console: " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-        System.out.println("História: " + historia);
+        System.out.println("\nNome do Console: " + getNome());
+        System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+        System.out.println("História: " + getHistoria());
     }
     public void exibeFichaTecnicaJogos() {
-        System.out.println("\nNome do jogo: " + nome);
-        System.out.println("Produtora: " + produtora);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-        System.out.println("História: " + historia);
-        System.out.println("Duração (Horas): " + duracaoEmHoras);
+        System.out.println("\nNome do jogo: " + getNome());
+        System.out.println("Produtora: " + getProdutora());
+        System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+        System.out.println("História: " + getHistoria());
+        System.out.println("Duração (Horas): " + getDuracaoEmHoras());
         System.out.printf("Média das avaliações: %.2f", fazMediaDasAvaliacoes());
         System.out.println("\nTotal de avaliações: " + getTotalAvaliacoes());
     }

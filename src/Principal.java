@@ -20,7 +20,7 @@ public class Principal {
 
 
         // GamesPlaystation
-        GamesPlaystation theLastOfUs = new GamesPlaystation(); // nesta linha parte esquerda do código está guardando onde o objeto está e a parte da direita está criando o objeto.
+        GamesPlaystation theLastOfUs = new GamesPlaystation(); // nesta linha - parte esquerda do código está guardando onde o objeto está e a parte da direita está criando o objeto.
 
         theLastOfUs.setNome("The last of us");
         theLastOfUs.setProdutora("Naughty Dog");
