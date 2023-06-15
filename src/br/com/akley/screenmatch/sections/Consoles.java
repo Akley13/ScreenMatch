@@ -11,7 +11,6 @@ public class Consoles {
     private double somaAvaliacoes; // private - Modificar de acesso
     private int totalAvaliacoes; // private - Ou de visibilidade
 
-
     // SETTERS - INSERE VALORES
     public void setNome(String nome) {
         this.nome = nome;
