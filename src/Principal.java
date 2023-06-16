@@ -38,25 +38,25 @@ public class Principal {
         theLastOfUs.exibeDadosPlaystation();
 
         GamesPlaystation godOfWar = new GamesPlaystation();
-        theLastOfUs.setNome("God of war - Ragnarok");
-        theLastOfUs.setProdutora("Santa Monica Studios");
-        theLastOfUs.setAnoDeLancamento(2022);
-        theLastOfUs.setHistoria("Se passa três anos após o evento do jogo de 2018, com Atreus um pouco mais velho enquanto tenta entender suas origens e a importância de seu nome de batismo — Loki. A busca por respostas vai desencadear no auge do Ragnarok, o fim dos tempos Nórdicos.");
-        theLastOfUs.setDuracaoEmHoras(45);
-        theLastOfUs.avaliacaoDasPessoas(10);
-        theLastOfUs.avaliacaoDasPessoas(8.5);
-        theLastOfUs.avaliacaoDasPessoas(9);
-        theLastOfUs.setReproducaoFullHD("4K");
-        theLastOfUs.setPlaystationPlus("Ativo");
+        godOfWar.setNome("God of war - Ragnarok");
+        godOfWar.setProdutora("Santa Monica Studios");
+        godOfWar.setAnoDeLancamento(2022);
+        godOfWar.setHistoria("Se passa três anos após o evento do jogo de 2018, com Atreus um pouco mais velho enquanto tenta entender suas origens e a importância de seu nome de batismo — Loki. A busca por respostas vai desencadear no auge do Ragnarok, o fim dos tempos Nórdicos.");
+        godOfWar.setDuracaoEmHoras(45);
+        godOfWar.avaliacaoDasPessoas(10);
+        godOfWar.avaliacaoDasPessoas(8.5);
+        godOfWar.avaliacaoDasPessoas(9);
+        godOfWar.setReproducaoFullHD("4K");
+        godOfWar.setPlaystationPlus("Ativo");
 
-        theLastOfUs.exibeFichaTecnicaJogos();
-        theLastOfUs.exibeDadosPlaystation();
+        godOfWar.exibeFichaTecnicaJogos();
+        godOfWar.exibeDadosPlaystation();
 
         // CALCULADORA
         CalculoHorasDeJogo calculo = new CalculoHorasDeJogo();
         calculo.inclui(theLastOfUs);
         calculo.inclui(godOfWar);
-        System.out.println(calculo.getTempoTotal());
+        System.out.println("Total de horas jogadas: " + calculo.getTempoTotal());
 
         // GamesXbox
         GamesXbox gearsOfWar = new GamesXbox();
