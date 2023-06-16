@@ -1,6 +1,7 @@
 import br.com.akley.screenmatch.sections.Consoles;
 import br.com.akley.screenmatch.sections.GamesPlaystation;
 import br.com.akley.screenmatch.sections.GamesXbox;
+import br.com.akley.screenmatch.sections.calculos.CalculoHorasDeJogo;
 
 public class Principal {
     public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class Principal {
 
 
         // GamesPlaystation
-        GamesPlaystation theLastOfUs = new GamesPlaystation(); // nesta linha - parte esquerda do código está guardando onde o objeto está e a parte da direita está criando o objeto.
+        GamesPlaystation theLastOfUs = new GamesPlaystation();
 
         theLastOfUs.setNome("The last of us");
         theLastOfUs.setProdutora("Naughty Dog");
@@ -36,20 +37,40 @@ public class Principal {
         theLastOfUs.exibeFichaTecnicaJogos();
         theLastOfUs.exibeDadosPlaystation();
 
-        //GamesXbox
+        GamesPlaystation godOfWar = new GamesPlaystation();
+        theLastOfUs.setNome("God of war - Ragnarok");
+        theLastOfUs.setProdutora("Santa Monica Studios");
+        theLastOfUs.setAnoDeLancamento(2022);
+        theLastOfUs.setHistoria("Se passa três anos após o evento do jogo de 2018, com Atreus um pouco mais velho enquanto tenta entender suas origens e a importância de seu nome de batismo — Loki. A busca por respostas vai desencadear no auge do Ragnarok, o fim dos tempos Nórdicos.");
+        theLastOfUs.setDuracaoEmHoras(45);
+        theLastOfUs.avaliacaoDasPessoas(10);
+        theLastOfUs.avaliacaoDasPessoas(8.5);
+        theLastOfUs.avaliacaoDasPessoas(9);
+        theLastOfUs.setReproducaoFullHD("4K");
+        theLastOfUs.setPlaystationPlus("Ativo");
+
+        theLastOfUs.exibeFichaTecnicaJogos();
+        theLastOfUs.exibeDadosPlaystation();
+
+        // CALCULADORA
+        CalculoHorasDeJogo calculo = new CalculoHorasDeJogo();
+        calculo.inclui(theLastOfUs);
+        calculo.inclui(godOfWar);
+        System.out.println(calculo.getTempoTotal());
+
+        // GamesXbox
         GamesXbox gearsOfWar = new GamesXbox();
 
         gearsOfWar.setNome("Gears of war");
         gearsOfWar.setProdutora("Epic Games");
         gearsOfWar.setAnoDeLancamento(2006);
         gearsOfWar.setHistoria("O jogo centra no Esquadrão Delta, um grupo de soldados da COG (Coalition of Ordered Governments) que recebe a missão de salvar o planeta Sera do exército Locust. O jogador controla Marcus Fenix, um ex-prisioneiro, e um possível segundo jogador controla \"Dom\" Santiago.");
+        gearsOfWar.setDuracaoEmHoras(13);
         gearsOfWar.avaliacaoDasPessoas(8);
         gearsOfWar.avaliacaoDasPessoas(10);
         gearsOfWar.avaliacaoDasPessoas(7);
         gearsOfWar.setReproducao4k("4K");
         gearsOfWar.setXboxLiveGold("Ativo");
-
-        System.out.println(gearsOfWar.getDuracaoEmHoras());
 
         gearsOfWar.exibeFichaTecnicaJogos();
         gearsOfWar.exibeDadosXbox();

@@ -69,7 +69,6 @@ public class Consoles {
         System.out.println("Produtora: " + getProdutora());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
         System.out.println("História: " + getHistoria());
-        System.out.println("Duração (Horas): " + getDuracaoEmHoras());
         System.out.printf("Média das avaliações: %.2f", fazMediaDasAvaliacoes());
         System.out.println("\nTotal de avaliações: " + getTotalAvaliacoes());
     }
