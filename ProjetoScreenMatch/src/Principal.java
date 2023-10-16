@@ -1,3 +1,5 @@
+import br.com.screenmatch.modelos.Filmes;
+
 public class Principal {
     public static void main(String[] args) {
 
