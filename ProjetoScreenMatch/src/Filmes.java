@@ -3,7 +3,7 @@ public class Filmes {
     String sinopse;
     int duracaoEmMinutos;
     int anoDeLancamento;
-    double somaDasAvaliacoes;
+    double somaDasAvaliacoes; kkk
     int totalDeAvaliacoes;
     boolean incluidoNoPlano;
 
