@@ -8,7 +8,6 @@ public class Titulos { // CLASSE
     Private - Uma classe, atributo ou método declarado como private só pode ser acessado dentro da própria classe. */
     private String nome;
     private String sinopse;
-    private int duracaoEmMinutos;
     private int anoDeLancamento;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
@@ -31,14 +30,6 @@ public class Titulos { // CLASSE
         this.sinopse = sinopse;
     }
 
-    public int getDuracaoEmMinutos() {
-        return duracaoEmMinutos;
-    }
-
-    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
-        this.duracaoEmMinutos = duracaoEmMinutos;
-    }
-
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
@@ -57,15 +48,12 @@ public class Titulos { // CLASSE
 
     // MÉTODOS
     public void exibeFichaTecnica(){
-        System.out.println("********************************************");
-        System.out.println("Nome: " + getNome());
+        System.out.println("\nNome: " + getNome());
         System.out.println("Sinopse: " + getSinopse());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
-        System.out.println("Duração (minutos): " + getDuracaoEmMinutos());
         System.out.println("Total das avaliações: " + getTotalDeAvaliacoes());
         System.out.printf("Média das avaliações: %.2f", retornaMediaDasAvaliacoes());
         System.out.println("\nAssinatura: " + getIncluidoNoPlano());
-        System.out.println("********************************************");
     }
 
     public int getTotalDeAvaliacoes(){
