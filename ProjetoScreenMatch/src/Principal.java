@@ -1,6 +1,7 @@
 import br.com.screenmatch.modelos.Filmes;
 import br.com.screenmatch.modelos.Series;
 import br.com.screenmatch.modelos.Titulos;
+import br.com.screenmatch.modelos.calculos.CalculadoraDeTempo;
 
 public class Principal extends Titulos{
     public static void main(String[] args) {
@@ -18,21 +19,12 @@ public class Principal extends Titulos{
 
         filmeEfeitoBorboleta.exibeFichaTecnica();
 
-        Series breakingBad = new Series();
-        breakingBad.setNome("Breaking Bad");
-        breakingBad.setSinopse("O professor de química Walter White não acredita que sua vida possa piorar ainda mais. Quando descobre que tem câncer terminal, Walter decide arriscar tudo para ganhar dinheiro enquanto pode, transformando sua van em um laboratório de metanfetamina.");
-        breakingBad.setAnoDeLancamento(2008);
-        breakingBad.setTemporadas(5);
-        breakingBad.setEpisodiosPorTemporada(10);
-        breakingBad.setMinutosPorEpisodio(41);
-        breakingBad.setAtiva("Ativada");
-        breakingBad.setIncluidoNoPlano(false);
+        Filmes filmeDesejoSombrio = new Filmes();
+        filmeEfeitoBorboleta.setDuracaoEmMinutos(120);
 
-        breakingBad.avaliacao(8);
-        breakingBad.avaliacao(9);
-        breakingBad.avaliacao(10);
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.adicionaTempo(filmeEfeitoBorboleta);
+        calculadora.adicionaTempo(filmeDesejoSombrio);
 
-        breakingBad.exibeFichaTecnica();
-        breakingBad.exibeFichaTecnicaSeries();
     }
 }

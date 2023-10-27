@@ -65,6 +65,7 @@ public class Titulos { // CLASSE
         System.out.println("Total das avaliações: " + getTotalDeAvaliacoes());
         System.out.printf("Média das avaliações: %.2f", retornaMediaDasAvaliacoes());
         System.out.println("\nAssinatura: " + getIncluidoNoPlano());
+        System.out.println("Duração de todos os filmes: " + getDuracaoEmMinutos());
     }
 
     public int getTotalDeAvaliacoes(){
