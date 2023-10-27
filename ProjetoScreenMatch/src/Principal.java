@@ -9,6 +9,7 @@ public class Principal extends Titulos{
         filmeEfeitoBorboleta.setNome("Efeito Borboleta");
         filmeEfeitoBorboleta.setSinopse("O estudante universitário Evan Treborn está aflito com dores de cabeça tão fortes que frequentemente desmaia. Enquanto está inconsciente, Evan pode viajar de volta no tempo para momentos de dificuldades na infância. Ele também pode alterar o passado para os amigos, como Kayleigh, que foi molestada pelo pai. Porém ao mudar o passado, ele pode alterar o presente, o que leva Evan a se encontrar em um pesadelo de realidades alternativas, incluindo uma onde ele está preso.");
         filmeEfeitoBorboleta.setAnoDeLancamento(2004);
+        filmeEfeitoBorboleta.setDuracaoEmMinutos(120);
         filmeEfeitoBorboleta.setIncluidoNoPlano(true);
 
         filmeEfeitoBorboleta.avaliacao(10);
@@ -25,6 +26,7 @@ public class Principal extends Titulos{
         breakingBad.setEpisodiosPorTemporada(10);
         breakingBad.setMinutosPorEpisodio(41);
         breakingBad.setAtiva("Ativada");
+        breakingBad.setIncluidoNoPlano(false);
 
         breakingBad.avaliacao(8);
         breakingBad.avaliacao(9);

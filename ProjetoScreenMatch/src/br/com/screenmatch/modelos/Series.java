@@ -42,10 +42,16 @@ public class Series extends Titulos { // essa classe tem tudo o que a de Titulos
         this.ativa = ativa;
     }
 
+    @Override
+    public int getDuracaoEmMinutos() {
+        return temporadas * minutosPorEpisodio * episodiosPorTemporada;
+    }
+
     public void exibeFichaTecnicaSeries(){
         System.out.println("Temporadas: " + getTemporadas());
         System.out.println("Episódios por temporada: " + getEpisodiosPorTemporada());
         System.out.println("Minutos por episódio: " + getMinutosPorEpisodio());
+        System.out.println("Duração total (minutos): " + getDuracaoEmMinutos());
         System.out.println("Série Ativa/Encerrada: " + getAtiva());
     }
 }

@@ -12,6 +12,8 @@ public class Titulos { // CLASSE
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     private boolean incluidoNoPlano;
+    private int duracaoEmMinutos;
+
 
     // MÉTODOS ACESSORES
     public String getNome() {
@@ -46,11 +48,20 @@ public class Titulos { // CLASSE
         this.incluidoNoPlano = incluidoNoPlano;
     }
 
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
     // MÉTODOS
     public void exibeFichaTecnica(){
         System.out.println("\nNome: " + getNome());
         System.out.println("Sinopse: " + getSinopse());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+        System.out.println("Duração (Minutos): " + getDuracaoEmMinutos());
         System.out.println("Total das avaliações: " + getTotalDeAvaliacoes());
         System.out.printf("Média das avaliações: %.2f", retornaMediaDasAvaliacoes());
         System.out.println("\nAssinatura: " + getIncluidoNoPlano());
