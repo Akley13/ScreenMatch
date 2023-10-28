@@ -1,7 +1,9 @@
+import br.com.screenmatch.modelos.Episodios;
 import br.com.screenmatch.modelos.Filmes;
 import br.com.screenmatch.modelos.Series;
 import br.com.screenmatch.modelos.Titulos;
 import br.com.screenmatch.modelos.calculos.CalculadoraDeTempo;
+import br.com.screenmatch.modelos.calculos.FiltroDeRecomendacao;
 
 public class Principal extends Titulos{
     public static void main(String[] args) {
@@ -13,18 +15,47 @@ public class Principal extends Titulos{
         filmeEfeitoBorboleta.setDuracaoEmMinutos(120);
         filmeEfeitoBorboleta.setIncluidoNoPlano(true);
 
-        filmeEfeitoBorboleta.avaliacao(10);
-        filmeEfeitoBorboleta.avaliacao(8.5);
-        filmeEfeitoBorboleta.avaliacao(9.8);
-
         filmeEfeitoBorboleta.exibeFichaTecnica();
 
         Filmes filmeDesejoSombrio = new Filmes();
-        filmeEfeitoBorboleta.setDuracaoEmMinutos(120);
+        filmeDesejoSombrio.setNome("Desejo Sombrio");
+        filmeDesejoSombrio.setDuracaoEmMinutos(120);
+
+        filmeDesejoSombrio.exibeFichaTecnica();
+
+        Filmes aProcuraDeUmMilagre = new Filmes();
+        aProcuraDeUmMilagre.setNome("A procura de um milagre");
+        aProcuraDeUmMilagre.setDuracaoEmMinutos(60);
+
+        aProcuraDeUmMilagre.exibeFichaTecnica();
+
+        Series breakingBad = new Series();
+        breakingBad.setNome("Breaking Bad");
+        breakingBad.setAnoDeLancamento(2017);
+        breakingBad.setIncluidoNoPlano(true);
+        breakingBad.setTemporadas(2);
+        breakingBad.setEpisodiosPorTemporada(2);
+        breakingBad.setMinutosPorEpisodio(2);
+
+        breakingBad.exibeFichaTecnicaSeries();
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.adicionaTempo(filmeEfeitoBorboleta);
         calculadora.adicionaTempo(filmeDesejoSombrio);
+        calculadora.adicionaTempo(aProcuraDeUmMilagre);
+        calculadora.adicionaTempo(breakingBad);
+
+        System.out.println("TEMPO TOTAL: " + calculadora.getTempoTotal());
+
+        FiltroDeRecomendacao filtro = new FiltroDeRecomendacao();
+        filtro.filtra(filmeEfeitoBorboleta);
+        filtro.filtra(aProcuraDeUmMilagre);
+
+        Episodios episodio = new Episodios();
+        episodio.setNumero(1);
+        episodio.setSerie(breakingBad);
+        episodio.setTotalVizualizacoes(400);
+        filtro.filtra(episodio);
 
     }
 }
