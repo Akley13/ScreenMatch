@@ -5,6 +5,8 @@ import br.com.screenmatch.modelos.Titulos;
 import br.com.screenmatch.modelos.calculos.CalculadoraDeTempo;
 import br.com.screenmatch.modelos.calculos.FiltroDeRecomendacao;
 
+import java.util.ArrayList;
+
 public class Principal extends Titulos{
     public static void main(String[] args) {
 
@@ -56,6 +58,17 @@ public class Principal extends Titulos{
         episodio.setSerie(breakingBad);
         episodio.setTotalVizualizacoes(400);
         filtro.filtra(episodio);
+
+        ArrayList<Filmes> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeEfeitoBorboleta);
+        listaDeFilmes.add(filmeDesejoSombrio);
+        listaDeFilmes.add(aProcuraDeUmMilagre);
+
+        System.out.println("\nTamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println("Segundo filme: " + listaDeFilmes.get(1).getNome());
+        System.out.println("Terceiro filme: " + listaDeFilmes.get(2).getNome());
+
 
     }
 }
