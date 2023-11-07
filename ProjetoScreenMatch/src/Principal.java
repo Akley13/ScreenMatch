@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class Principal extends Titulos{
     public static void main(String[] args) {
 
+
         Filmes filmeEfeitoBorboleta = new Filmes();
         filmeEfeitoBorboleta.setNome("Efeito Borboleta");
         filmeEfeitoBorboleta.setSinopse("O estudante universitário Evan Treborn está aflito com dores de cabeça tão fortes que frequentemente desmaia. Enquanto está inconsciente, Evan pode viajar de volta no tempo para momentos de dificuldades na infância. Ele também pode alterar o passado para os amigos, como Kayleigh, que foi molestada pelo pai. Porém ao mudar o passado, ele pode alterar o presente, o que leva Evan a se encontrar em um pesadelo de realidades alternativas, incluindo uma onde ele está preso.");
@@ -21,12 +22,14 @@ public class Principal extends Titulos{
 
         Filmes filmeDesejoSombrio = new Filmes();
         filmeDesejoSombrio.setNome("Desejo Sombrio");
+        filmeDesejoSombrio.setAnoDeLancamento(2023);
         filmeDesejoSombrio.setDuracaoEmMinutos(120);
 
         filmeDesejoSombrio.exibeFichaTecnica();
 
         Filmes aProcuraDeUmMilagre = new Filmes();
         aProcuraDeUmMilagre.setNome("A procura de um milagre");
+        aProcuraDeUmMilagre.setAnoDeLancamento(2004);
         aProcuraDeUmMilagre.setDuracaoEmMinutos(60);
 
         aProcuraDeUmMilagre.exibeFichaTecnica();
@@ -69,6 +72,7 @@ public class Principal extends Titulos{
         System.out.println("Segundo filme: " + listaDeFilmes.get(1).getNome());
         System.out.println("Terceiro filme: " + listaDeFilmes.get(2).getNome());
 
+        System.out.println(listaDeFilmes);
 
     }
 }
